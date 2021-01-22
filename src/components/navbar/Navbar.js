@@ -11,16 +11,16 @@ const Navbar =({sidebarOpen,openSidebar})=>{
                 <div className="navbar__left">
                     <a className="active_link" href="#">Admin</a>
                    
-                    <a  href="#">User</a>
+                    {/* <a  href="#">User</a> */}
 
                 </div>
                 <div className="navbar__right">
-                    <a href="#">
+                    {/* <a href="#">
                         <i className="fa fa-search"></i>
                     </a>
                     <a href="#">
                         <i  className="fa fa-clock-o"></i>
-                    </a>
+                    </a> */}
                     <a href="#" >
                             <img width="30" src={avatar} alt="avatr"/>
                     </a>

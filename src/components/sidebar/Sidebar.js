@@ -1,15 +1,14 @@
 import './sidebar.css';
-import logo from '../../assets/logo.png';
-import imedidata from '../../assets/imedidata.png'
+import imedidata from '../../assets/logoi.png'
 
 
 const Sidebar = ({sidebarOpen,closeSidebar})=>{
     return(
         <div className={sidebarOpen ? "sidebar_responsive" : ""} id="sidebar">
                 <div className="sidebar__title">
-                    <div className="sidebar__img">
-                        <img src={imedidata} alt="imedidata" height="100px" width="100px"/>
-                        <h1>Platform</h1>
+                    <div  className="sidebar__img">
+                        <img src={imedidata} alt="imedidata" height="auto" width="100px"/>
+                        
                     </div>
                     <i className="fa fa-times" id="sidebarIcon" onClick={()=>closeSidebar()}></i>
                 </div>
@@ -19,7 +18,7 @@ const Sidebar = ({sidebarOpen,closeSidebar})=>{
                         <a href="/">Dashboard</a>
                         
                     </div>
-                    <h2>TEAMS</h2>
+                    <h2>Teams</h2>
                         <div className="sidebar__link">
                             <i className="fa fa-user-secret"></i>
                             <a href="core_services"> Core Services</a>
@@ -40,23 +39,13 @@ const Sidebar = ({sidebarOpen,closeSidebar})=>{
                             <i className="fa fa-simplybuilt"></i>
                             <a href="ui"> UI</a>
                         </div>
-                        {/* <h2>Leave</h2>
+                         <h2>Learn</h2>
                         <div className="sidebar__link">
-                            <i className="fa fa-question"></i>
-                            <a href="#">Requests</a>
+                            <i className="fa fa-book"></i>
+                            <a href="learn">Docs</a>
                         </div>
-                        <div className="sidebar__link">
-                            <i className="fa fa-sign-out"></i>
-                            <a href="#">Leave Policy</a>
-                        </div>
-                        <div className="sidebar__link">
-                            <i className="fa fa-calendar-check-o"></i>
-                            <a href="#">Special Days</a>
-                        </div>
-                        <div className="sidebar__link">
-                            <i className="fa fa-files-o"></i>
-                            <a href="#"> Apply for leave</a>
-                        </div>
+                        
+                        {/*
                         <h2>PAYROLL</h2>
                         <div className="sidebar__link">
                             <i className="fa fa-money"></i>

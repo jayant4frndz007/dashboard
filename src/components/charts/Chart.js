@@ -28,8 +28,8 @@ const data1 =[
     
 
 ]
-        return(<div style={{marginTop:'15px'}}>
-                <XYPlot height={300} width={300}>
+        return(<div style={{marginTop:'10px'}}>
+                {/* <XYPlot height={300} width={300}>
                     <VerticalGridLines/>
                     <HorizontalGridLines/>
                     <XAxis title="time"/>
@@ -37,8 +37,8 @@ const data1 =[
                     
                     <LineSeries data={data1} animation color="red"/> 
                     <LineSeries data={data} animation color="yellow"/>                    
-                </XYPlot>
-                <XYPlot height={300} width={300}>
+                </XYPlot> */}
+                <XYPlot height={200} width={350}>
                 <VerticalGridLines/>
                     <HorizontalGridLines/>
                     <XAxis/>
